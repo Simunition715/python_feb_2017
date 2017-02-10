@@ -1,0 +1,2 @@
+Database > connect to database > enter password > start query in workbench
+SELECT * FROM ‘database table’

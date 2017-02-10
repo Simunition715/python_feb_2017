@@ -1,0 +1,101 @@
+2017-02-09T16:12:57.999612Z 1 [Note] A temporary password is generated for root@localhost: c-+uV:Sl1zlQ
+
+
+mySQL = structured query language
+Basically Microsoft excel
+
+Table is pluralized and lowercase!!!
+Id/name/email/password/ created@/ updated@
+1  kjnn klml  ******.    (New)Time/stamp
+2. kmi.  Iji  ******
+\
+EVERY TABLE HAS CREATED_AT
+
+Var char(255)
+text()
+int()
+
+“SELECT <tablename>.<key> FROM <table>”
+“SELECT users.name FROM users”
+
+
+“SELECT *(<all selector) FROM users WHERE id=1”
+
+Transactions
+“SELECT * FROM users JOIN transactions ON user.id=transactions.user_id
+User.created AS ‘user_date’
+LEFT JOIN gives both but null last 
+NOW function = creates timestamp
+
+Or comma separate
+
+
+
+What query would you run to get all of the users?
+
+SELECT * 
+FROM users;
+What query would you run to only get the first names of all of the users?
+SELECT first_name 
+FROM users;
+What query would you run to only get the first and last names of all of the users? 
+SELECT first_name, last_name
+FROM users;
+SELECT w/ Conditionals
+What query would you run to only get the first name of users with id of 2?
+
+SELECT first_name
+FROM users
+WHERE id = 2;
+What query would you run to get the last names of users with id of 2 or 3?
+
+SELECT last_name
+FROM users
+WHERE id = 2 OR id = 3;
+What query would you run to get all of the users with id greater than 2?
+SELECT *
+FROM users
+WHERE id > 2;
+What query would you run to get all of the users with id less than or equal to 3?
+SELECT *
+FROM users
+WHERE id <= 3;
+What query would you run to get all of the users with first names ending in "e"?
+SELECT * 
+FROM users
+WHERE first_name LIKE "%e";
+What query would you run to get all of the users with first names starting in "K"?
+SELECT * 
+FROM users
+WHERE first_name LIKE "K%";
+SELECT w/ Sorting
+What query would you run to get all of the users with the youngest users at the top of the table?
+
+SELECT *
+FROM users
+ORDER BY birthday DESC;
+What query would you run to get all of the users with the oldest users at the top of the table?
+
+SELECT *
+FROM users
+ORDER BY birthday ASC;
+What query would you run to get all of the users with the first name that ends with "e" with the youngest users at the top of the table?
+
+SELECT *
+FROM users
+WHERE first_name LIKE "%e"
+ORDER BY birthday DESC;
+What query would you run to get only the first names of all of the users in alphabetical order?
+
+SELECT first_name
+FROM users
+ORDER BY first_name
+
+
+
+
+
+
+Delete requires an id!
+“DELETE FROM <tablename> WHERE id =<id>”
+“UPDATE <table name>. <key> = <value>
